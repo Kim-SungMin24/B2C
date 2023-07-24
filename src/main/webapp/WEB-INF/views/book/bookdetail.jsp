@@ -1,88 +1,218 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../include/header.jsp"%>
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('/images/bg_main.png')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">
+              ${book.title }
+            </h1>
 
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item">
+                  <a href="/book/list">대여 리스트</a>
+                </li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  ${book.title }
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="section">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-7">
+            <div class="img-property-slide-wrap">
+              <div class="img-property-slide">
+                <img src="/resource/img/${book.img }" alt="Image" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="heading text-primary">${book.title }</h2>
+            <p class="meta">간략 주소</p>
+            <p class="text-black-50">
+              <b>${book.content }</b>
+            </p>
+            <p class="text-black-50">
+              Perferendis eligendi reprehenderit, assumenda molestias nisi eius
+              iste reiciendis porro tenetur in, repudiandae amet libero.
+              Doloremque, reprehenderit cupiditate error laudantium qui, esse
+              quam debitis, eum cumque perferendis, illum harum expedita.
+            </p>
 
-<br/><br/>
+            <div class="d-block agent-box p-5">
+              <div class="img mb-4">
+                <img
+                  src="images/person_2-min.jpg"
+                  alt="Image"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="text">
+                <h3 class="mb-0">Alicia Huston</h3>
+                <div class="meta mb-3">Real Estate</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione laborum quo quos omnis sed magnam id ducimus saepe
+                </p>
+                <ul class="list-unstyled social dark-hover d-flex">
+                  <li class="me-1">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                  <li class="me-1">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="me-1">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="me-1">
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Contact</h3>
+              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li>
+                  <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Creative</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
 
-<center>
-<img src = "/resource/img/${book.img }" style="width:400px;"><br/> <!-- 업로드 이미지파일 -->
-</center>
-<hr style = "border : solid 2px #828282; width:395px">
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
 
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
 
-<head>
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co">Untree.co</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+            <div>
+              Distributed by
+              <a href="https://themewagon.com/" target="_blank">themewagon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
 
-<style>
-		div {
-			border: 1px solid white ;
-			margin: 0px auto;
-			padding: 0px;
-			width: 400px;
-			overflow: auto;
-		}
-</style>
-</head>
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
 
-<body>
-	<div style = "font-size: 17px; font-weight:500">ID : ${book.memberid.username }</div>
-	<div style = "font-size: 15px; font-weight:400">주소 : ${book.memberid.address }</div>
-	
-	<hr style = "border : solid 2px #828282; width:395px">
-	<div style = "font-size: 15px; font-weight:200">${book.category }</div>
-	<div style = "font-size: 20px; font-weight:700">${book.title }</div>
-	
-	
-	<!--  <div>책제목 : ${book.title }</div>-->
-	<div>${book.author }</div><br>
-	<div>[내용] <br> ${book.content }</div><br>
-	<div style = "font-size: 11px;">등록날짜 : ${book.uploaddate }</div>
-	<br><br>	
-	
-</body>
-
-
-<!-- 대여 요청 버튼? 수정 김명준-->
-	<sec:authorize access="isAuthenticated()">
-	<c:if test="${empty book.rentalid and principal.username!=book.memberid.username }">
-		<div class="form-group">
-			<button type="button" class="btn btn-primary btn-sm" id="rentBook">대여신청</button>
-		</div>
-	</c:if>
-	<c:if test="${!empty book.rentalid or principal.username==book.memberid.username }">
-		<div class="form-group">
-			<button type="button" class="btn btn-danger btn-sm">대여불가</button>
-		</div>
-	</c:if>
-	</sec:authorize>
-	<sec:authorize access="isAnonymous()">
-		<div class="form-group">
-			<button type="button" class="btn btn-primary btn-sm" onclick="location.href='/login'">로그인</button>
-		</div>
-	</sec:authorize>
-<script>
-<!-- 대여 요청 버튼? 수정 김명준-->
-$('#rentBook').on('click', function(){
-	$.ajax({
-		type : 'get',
-		url : '/rent/request/${book.bookid}'
-	})
-	.done(function(resp){
-		if(resp=='success'){
-			alert('대여 요청되었습니다')
-			location.href="/book/list";
-		}else{
-			alert('대여 요청 실패 (자기자신, 다른사람이 먼저 요청함)')
-			location.href="/book/list";
-		}
-	})
-	.fail(function(){
-		alert('실패')
-	})
-})
-<!--끝-->
-</script> 
-
-<%@ include file="../include/footer.jsp"%>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/tiny-slider.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/counter.js"></script>
+    <script src="/js/custom.js"></script>
+  </body>
+</html>
