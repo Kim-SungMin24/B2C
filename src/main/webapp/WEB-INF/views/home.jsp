@@ -2,5 +2,5 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="include/header.jsp"%>
 <h2>home</h2>
-123123123
+121212
 <%@ include file="include/footer.jsp"%>
