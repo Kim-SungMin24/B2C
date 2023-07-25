@@ -10,4 +10,11 @@ import com.group5.b2c.model.Member;
 public interface BookRepository extends JpaRepository<Book, Long> {
 	List<Book> findByMemberid(Member member);
 	List<Book> findByTitleContainingOrAuthorContainingOrCategoryContaining(String title, String author, String category);
+	
+	
+
+
+
+
+
 }

@@ -29,11 +29,15 @@
     <title>
       Property &mdash; Free Bootstrap 5 Website Template by Untree.co
     </title>
+  
+  
   </head>
   <body>
 	<sec:authorize access="isAuthenticated()">
 		<sec:authentication property="principal" var="principal"/>
 	</sec:authorize>
+    
+    
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close">
@@ -50,17 +54,20 @@
             <a href="/" class="logo m-0 float-start">B2C</a>
 
             <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start"
             >
               <li><a href="/">Home</a></li>
+              
+              
               <li class="has-children active">
                 <a href="/book/list">책 렌탈</a>
                 <ul class="dropdown">
                   <li><a href="/book/list">책 리스트</a></li>
                   <li><a href="/book/insert">책 등록하기</a></li>
-                  <li class="has-children">
-                    <a href="#">Dropdown</a>
-                    <ul class="dropdown">
+                  
+                  		<li class="has-children">
+                   		 <a href="#">Dropdown</a>
+                   			 <ul class="dropdown">
                       <li><a href="#">Sub Menu One</a></li>
                       <li><a href="#">Sub Menu Two</a></li>
                       <li><a href="#">Sub Menu Three</a></li>
@@ -68,10 +75,34 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About</a></li>
+              
+              
+              
+              <li class="has-children active">
+              <a href="/board/list">게시판</a>
+              <ul class="dropdown">
+              <li><a href="/board/insert">글 등록</a></li>
+              <li><a href="/board/list">글 목록</a></li>
+              </ul>
+              </li>
+              </ul>
+              
+      <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+              
+              
+             <!--   <li><a href="about.html">About</a></li>-->
+              
+              <sec:authorize access="isAnonymous()">
               <li><a href="/login">로그인</a></li>
+              <li><a href="/join">회원가입</a></li>
+              </sec:authorize>
+              <sec:authorize access="isAuthenticated()">
+              <li><a href="/logout">로그아웃</a></li>
+              <li><a href="/member/update">회원변경</a></li>
+              </sec:authorize>
             </ul>
+           
+           
             <a
               href="#"
               class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
