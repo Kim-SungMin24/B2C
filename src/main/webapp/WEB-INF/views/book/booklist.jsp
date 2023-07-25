@@ -66,11 +66,24 @@
           <div class="col-lg-3">Pagination (1 of 10)</div>
           <div class="col-lg-6 text-center">
             <div class="custom-pagination">
+              
+              <c:if test="${boardList.first==false }">
+				<a class="page-link"
+					href="?page=${boardList.number-1 }&field=${f}&word=${w}">이전</a>
+			</c:if>
+              
               <a href="#">1</a>
               <a href="#" class="active">2</a>
               <a href="#">3</a>
               <a href="#">4</a>
               <a href="#">5</a>
+              
+             <!--  <c:if test="${boardList.last==false }">
+				<li class="page-item"><a class="page-link"
+					href="?page=${boardList.number+1 }&field=${f}&word=${w}">다음</a></li>
+			</c:if>--> 
+              
+              
             </div>
           </div>
         </div>
