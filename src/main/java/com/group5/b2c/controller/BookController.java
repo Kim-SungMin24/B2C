@@ -3,6 +3,7 @@ package com.group5.b2c.controller;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,6 +32,7 @@ public class BookController {
 	private final BookService bookService;
 	private final MemberRepository memberRepository;
 	
+	@PreAuthorize("isAuthenticated()")
 	@GetMapping("insert")
 	public String insert() {
 		return "/book/insert";

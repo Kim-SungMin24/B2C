@@ -54,10 +54,10 @@
             >
               <li><a href="/">Home</a></li>
               <li class="has-children active">
-                <a href="/book/list">책 대여</a>
+                <a href="/book/list">책 렌탈</a>
                 <ul class="dropdown">
-                  <li><a href="#">Buy Property</a></li>
-                  <li><a href="#">Sell Property</a></li>
+                  <li><a href="/book/list">책 리스트</a></li>
+                  <li><a href="/book/insert">책 등록하기</a></li>
                   <li class="has-children">
                     <a href="#">Dropdown</a>
                     <ul class="dropdown">
